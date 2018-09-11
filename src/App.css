@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  
+}
+
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.App-title {
+  padding-top: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+
+}
+
+.particles{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.Content{
+  position: relative;
+  top: 50px;
+  background-color: black;
+}
+
+.resume{
+  color: white;
+  font-size: large;
+  padding: 20px;
+}
+
+.profile-photo{
+  height: 50px;
+    width: 12%;
+    position: relative;
+    left:0px;
+    top: 30px;
+    z-index: -1;
+}
+
+.status{
+  text-align: center;
+  color: white;
+}
