@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
 
 import Banner from './Banner/Banner';
-import Content from './Content/Content';
-import Contact from './Contact/Contact';
-import Button from 'react-bootstrap/lib/Button';
-import Image from 'react-bootstrap/lib/Image';
-import 'bootstrap/dist/css/bootstrap.css';
-import image from './image.jpg';
+import image from './ProfilePic.png';
+import { Image, Header, Container, Segment } from 'semantic-ui-react';
 import './App.css';
+import Tabs from './Content/Tab';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-      
-         <Banner />
-         
-         <Image src={image} responsive thumbnail className="profile-photo"/>;
 
-         
+        <Banner />
+        <Image src={image} size='medium' circular className="profile" />
 
-        <Content />
-        
-        
-
-       
+        <Container>
+          <Segment className="Segment">
+            <Header size="huge" dividing>Ruben Marin</Header>
+            <Header block>NOTE: Site is under construction</Header>
+            <Tabs />
+          </Segment>
+        </Container>
       </div>
     );
   }

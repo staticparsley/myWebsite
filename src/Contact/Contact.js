@@ -1,36 +1,15 @@
-import React, { Component } from 'react';
-import gitLogo from './github.png';
-import twitter from './twitter.png';
-import linkedIn from './linkedin-logo.png';
-import instagram from './instagram.svg';
+import React from 'react';
 
-import './Contact.css';
+import { Header, Icon, Segment } from 'semantic-ui-react';
 
-
-export class Contact extends Component {
-    render() {
-        return (
-
-
-            
-            <div className="contact-block">
-
-                <a target="_blank" href="https://github.com/staticparsley">
-                    <img src={gitLogo} className="link" />
-                </a>
-                <a target="_blank" href="https://twitter.com/staticparsley">
-                    <img src={twitter} className="link2"/>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/rubenlmarin">
-                    <img src={linkedIn} className="link3"/>
-                </a>
-
-                <a target="_blank" href="https://www.instagram.com/staticparsley">
-                    <img src={instagram} className="link3"/>
-                </a>
-            </div>
-        );
-    }
-}
+const Contact = () => (
+    <Segment raised>
+        <Header>You can find me at the links below</Header>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/rubenlmarin/"><Icon name="linkedin" size="big" /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/staticparsley"><Icon name="github square" size="big" /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/staticparsley"><Icon name="twitter square" size="big" /></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/staticparsley"><Icon name="instagram" size="big" /></a>
+    </Segment>
+)
 
 export default Contact;

@@ -1,38 +1,38 @@
 export const particlesOptions = {
   particles: {
     number: {
-      value: 40,
+      value: 20,
       density: {
         enable: true,
-        value_area: 600
+        value_area: 900
       }
     },
     color: {
       value: "#35b600"
     },
     shape: {
-      type: "circle",
+      type: "polygon",
       stroke: {
-        width: 4,
+        width: 7,
         color: "#ff0000"
       }
     },
     opacity: {
-      value: 0.5,
+      value: .4,
       random: false,
       anim: {
         enable: false,
-        speed: 1,
+        speed: 2,
         opacity_min: 0.1,
         sync: false
       }
     },
     size: {
-      value: 8.891491985203452,
+      value: 20,
       random: true,
       anim: {
         enable: false,
-        speed: 60,
+        speed: 100,
         size_min: 0.1,
         sync: false
       }
@@ -46,5 +46,5 @@ export const particlesOptions = {
     }
   }
 
-    
+
 }
