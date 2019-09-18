@@ -1,0 +1,22 @@
+.Skills{
+    margin-top: 10vh;
+   color:black;
+   background-color: white;
+}
+
+.Experience{
+    margin-top: 10vh;
+   color:black;
+   background-color: white;
+}
+
+.About {
+      margin-top: 7vh;
+   color:black;
+   background-color: white;
+}
+
+.Bio {
+    font-size: 2vh;
+    font-family: 'Press Start 2P', cursive;
+}

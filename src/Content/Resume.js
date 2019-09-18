@@ -1,14 +1,17 @@
 import React from 'react';
-import { Segment, Button, Header } from 'semantic-ui-react';
-import resume from './RubenMarin_resume.pdf';
+import { Button, Header } from 'semantic-ui-react';
+import resume from './RubenMarin_Resume.pdf';
 
 const ResumeSection = () => (
-    <Segment raised>
-        <Header>Click here for my resume</Header>
-        <form method="get" action={resume}>
-            <Button primary>Resume</Button>
-        </form>
-    </Segment>
+    <div style={{marginTop: '5vh', paddingBottom: '2vh'}}>
+        
+            <Header>Click here for my resume</Header>
+            <form method="get" action={resume}>
+                <Button primary>Resume</Button>
+            </form>
+   
+        
+    </div>
 );
 
 export default ResumeSection;

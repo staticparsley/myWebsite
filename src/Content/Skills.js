@@ -1,40 +1,38 @@
 import React from 'react';
-import { Grid, Icon, Header, Segment } from 'semantic-ui-react';
+import { Grid, Icon, List, Container } from 'semantic-ui-react';
+import './Content.css';
+
+const skillList = ['Javascript', 'NodeJS','React', 'Python', 'AWS', 'Linux SysAdmin,','Express', 'HapiJS', 'MongoDB', 'PostgreSQL'];
 
 const Skills = () => (
     <div>
-        <Header>Skills:</Header>
-        <Segment raised>
-            <Grid columns={6}>
-                <Grid.Column><Icon name="js" size="huge" /></Grid.Column>
-                <Grid.Column><Icon name="node" size="huge" /></Grid.Column>
-                <Grid.Column><Icon name="react" size="huge" /></Grid.Column>
-                <Grid.Column><Icon name="python" size="huge" /></Grid.Column>
-                <Grid.Column><Icon name="aws" size="huge" /></Grid.Column>
-                <Grid.Column><Icon name="linux" size="huge" /></Grid.Column>
-            </Grid>
-        </Segment>
-        <Header>Experience:</Header>
-        <Segment raised>
-            <Grid columns={3} relaxed='very'>
-                <Grid.Column>
-                    <Header>Tendigi - Web Developer</Header>
-                    <p>October 2018 - Current</p>
-                </Grid.Column>
-                <Grid.Column>
-                    <Header>CSULB - JavaScript Developer</Header>
-                    <p>May 2017 - January 2018</p>
-                </Grid.Column>
-                <Grid.Column>
-                    <Header>HSI STEM - PHP Developer</Header>
-                    <p>June 2015 - October 2016</p>
-                </Grid.Column>
-            </Grid>
-        </Segment>
-        <Header>Education:</Header>
-        <Segment raised>B.S in Computer Science - California State University, Long Beach <Icon name="graduation cap" />Graduated May 2018</Segment>
-    </div >
+        <Container className="Skills">
+            <Grid columns={3} stackable>
+                <Grid.Column><Icon name="js" size="massive" /></Grid.Column>
+                <Grid.Column><Icon name="node" size="massive" /></Grid.Column>
+                <Grid.Column><Icon name="react" size="massive" /></Grid.Column>
 
+            </Grid>
+            <Grid columns={3} stackable>
+                <Grid.Column><Icon name="python" size="massive" /></Grid.Column>
+                <Grid.Column><Icon name="aws" size="massive" /></Grid.Column>
+                <Grid.Column><Icon name="linux" size="massive" /></Grid.Column>
+            </Grid>
+
+            <List animated verticalAlign>
+                {skillList.map(item => {
+                    return(
+                        <List.Item>
+                            <List.Content>
+                                <List.Header>{item}</List.Header>
+                            </List.Content>
+                        </List.Item>
+                    ) 
+                })}
+            </List>
+            
+        </Container>
+    </div>
 );
 
 export default Skills;
