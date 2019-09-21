@@ -31,7 +31,7 @@ class App extends Component {
             strength={-600}
           >
             <Header style={{ color: "white", width: '50%', marginTop: '12vh', marginLeft: 'auto', marginRight: 'auto', fontSize: '10vh' }}>About</Header>
-            <Image src={image} size='medium' circular className="profile"/>
+            {/* <Image src={image} size='medium' circular className="profile"/> */}
             <About />
             <div style={{ height: '20vh', marginTop: '0', padding: '0' }} />
           </Parallax>
