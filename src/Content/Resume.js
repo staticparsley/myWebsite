@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Header } from 'semantic-ui-react';
-import resume from './RubenMarin_resume.pdf';
+import resume from './RubenMarin_Resume.pdf';
 
 const ResumeSection = () => (
     <div style={{marginTop: '5vh', paddingBottom: '2vh'}}>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import image from './ProfilePic.png';
-import { Image, Header } from 'semantic-ui-react';
+import { Header } from 'semantic-ui-react';
 import './App.css';
 import Contact from './Contact/Contact';
 import About from './Content/About';
@@ -15,9 +14,9 @@ class App extends Component {
       <div className="App">
           <Parallax
             blur={{ min: -25, max: 25 }}
-            bgImage={require('./IMG_4922.jpg')}
+            bgImage={require('./IMG_5382.jpg')}
             bgImageAlt="main"
-            strength={-250}
+            strength={-150}
           >
             <Header dividing style={{ color: "white", marginTop: '50vh', fontSize: '10vh', marginleft: 'auto', marginRight: 'auto' }}>Ruben Marin</Header>
           <Header style={{ color: "white", fontSize: '2vh', marginleft: 'auto', marginRight: 'auto' }}>Software Engineer - Full Stack Developer</Header>
@@ -31,7 +30,6 @@ class App extends Component {
             strength={-600}
           >
             <Header style={{ color: "white", width: '50%', marginTop: '12vh', marginLeft: 'auto', marginRight: 'auto', fontSize: '10vh' }}>About</Header>
-            {/* <Image src={image} size='medium' circular className="profile"/> */}
             <About />
             <div style={{ height: '20vh', marginTop: '0', padding: '0' }} />
           </Parallax>
@@ -63,7 +61,7 @@ class App extends Component {
           >
             <Header style={{ color: "white", width: '50%', marginTop: '12vh', marginLeft: 'auto', marginRight: 'auto', fontSize: '10vh' }}>Contact</Header>
             <Contact />
-            <div style={{ height: '10vh' }} />
+            <div style={{ height: '20vh' }} />
           </Parallax>
       </div>
     );
