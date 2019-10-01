@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
           <Parallax
             blur={{ min: -25, max: 25 }}
-            bgImage={require('./IMG_5382.jpg')}
+            bgImage={require('./camera.jpg')}
             bgImageAlt="main"
             strength={-150}
           >

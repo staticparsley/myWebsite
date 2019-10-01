@@ -1,13 +1,13 @@
 import React from 'react';
 import { Segment, Container, Image } from 'semantic-ui-react';
-import image from '../profile.png';
+import image from '../profile.jpg';
 import './Content.css';
 
 const AboutMe = () => (
     <div>
         <Container className="About">
              <Segment style={{marginTop: '10vh', }}>
-                <Image src={image} size='medium'  className="profile" />
+                <Image src={image} size='medium' circular className="profile" />
             <p className="Bio">
                 I'm a software engineer based out of New York City. Orignally from
                 Los Angeles I moved out to the East Coast in pursuit of a better life
