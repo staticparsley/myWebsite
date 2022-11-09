@@ -9,7 +9,7 @@
     "react-dom": "^16.5.0",
     "react-parallax": "^2.2.3",
     "react-particles-js": "^2.3.0",
-    "react-scripts": "1.1.5",
+    "react-scripts": "5.0.1",
     "react-twitter-embed": "^2.0.8",
     "semantic-ui-react": "^0.87.3"
   },
